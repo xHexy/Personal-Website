@@ -1,0 +1,222 @@
+
+@font-face {
+    font-family: 'Andy Bold';
+    src: url('fonts/Andy Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    text-shadow: 2px 2px 0 #000;
+    color: #ffd700;
+    font-family: 'Andy Bold', monospace;
+    font-size: 34px;
+    line-height: 1.6;
+    position: relative;
+    background: url('icons/background.jpg') fixed center center/cover no-repeat;
+}
+
+.background-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cloud {
+    position: fixed;
+    z-index: -1;
+}
+
+.cloud1 {
+    top: 8%;
+    left: 1400px;
+}
+
+.cloud2 {
+    top: 23%;
+    left: 200px;
+}
+
+.cloud3 {
+    top: 45%;
+    left: 1000px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    background: #1f329c;
+    border: 4px solid #06064f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0.95;
+}
+
+.header h1 {
+    color: #ffd700;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.header p {
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.content-section {
+    background: #1f329c;
+    border: 3px solid #06064f;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.content-section h2 {
+    color: #ffd700;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.content-section p,
+.content-section li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.content-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-section li:before {
+    content: "-  ";
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1f329c;
+    border: 3px solid #06064f;
+    color: #ffd700;
+    text-decoration: none;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 #000;
+    font-family: 'Andy Bold', 'Press Start 2P', monospace;
+    font-size: 21px;
+    cursor: url('icons/Cursor_1-white.png'), auto;
+}
+
+.cv-download {
+    background: rgba(139, 0, 0, 0.95);
+    border: 3px solid #dc143c;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: url('icons/Cursor_1-white.png'), auto;
+    position: relative;
+    min-height: 120px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventory-slot {
+    background: #1f329c;
+    border: 3px solid #06064f;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: url('icons/Cursor_1-white.png'), auto;
+    position: relative;
+    min-height: 200px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+    opacity: 0.9;
+}
+.slot-icon {
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    margin: 0 auto 15px;
+    position: relative;
+    image-rendering: pixelated;
+    background-size: cover;
+    background-position: center;
+}
+.slot-title {
+    color: #ffd700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.slot-description {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+}
+.stats-bar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #1f329c;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #06064f;
+    z-index: 1000;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.stat-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 2px;
+    background-size: cover;
+}
+
+.cursor {
+    cursor: url('icons/Cursor_0.png'), default;
+}
+
+
